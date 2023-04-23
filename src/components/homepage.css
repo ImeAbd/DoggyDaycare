@@ -1,0 +1,59 @@
+.homepage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: orange;
+    border-radius: 15px;
+    padding: 20px;
+  }
+  
+  /* menu */
+  .homemenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .homemenu button{
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    background-color: #fff;
+    color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  .homemenu button:hover{
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* dogcard */
+  .dogcard{
+    height: auto;
+    background-color: rgb(72, 61, 139);
+    border-radius: 20px;
+    margin: 35px;
+    padding: 20px;
+  }
+  
+  .dogcard img{
+    height: 350px;
+    border-radius: 5px;
+    object-fit: cover;
+    background-position: center;
+  }
+  
+  @media(max-width:700px){
+    .homepage{
+      flex-direction: column;
+    }
+    .dogcard img{
+      height: 500px;
+    }
+  }
+  
